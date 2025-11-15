@@ -9,3 +9,4 @@ with open(file=path, mode="r", encoding="utf-8") as file:
     for row in csv_reader:
         csv_list.append(row)
         print(row)
+        
