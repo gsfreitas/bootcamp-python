@@ -1,0 +1,16 @@
+2025-11-15T19:47:00.188163-0300 INFO Chamando a função sum com os argumentos (7, 8) e {} utils_log.py
+2025-11-15T19:47:00.188163-0300 INFO A função sum retornou 15 utils_log.py
+2025-11-15T19:47:00.188163-0300 INFO Chamando a função sum com os argumentos (7, '8') e {} utils_log.py
+2025-11-15T19:47:00.189715-0300 ERROR Erro na função sum: unsupported operand type(s) for +: 'int' and 'str' utils_log.py
+2025-11-15T19:49:17.634985-0300 INFO Chamando a função sum com os argumentos (7, 8) e {} utils_log.py
+2025-11-15T19:49:17.636000-0300 INFO A função sum retornou 15 utils_log.py
+2025-11-15T19:49:17.638015-0300 INFO Chamando a função sum com os argumentos (7, '8') e {} utils_log.py
+2025-11-15T19:49:17.638203-0300 ERROR Erro na função sum: unsupported operand type(s) for +: 'int' and 'str' utils_log.py
+2025-11-15T19:50:48.233071-0300 INFO Chamando a função sum com os argumentos (7, 8) e {} utils_log.py
+2025-11-15T19:50:48.233071-0300 INFO A função sum retornou 15 utils_log.py
+2025-11-15T19:50:48.233970-0300 INFO Chamando a função sum com os argumentos (7, '8') e {} utils_log.py
+2025-11-15T19:50:48.233970-0300 ERROR Erro na função sum: unsupported operand type(s) for +: 'int' and 'str' utils_log.py
+2025-11-15T19:50:48.233970-0300 INFO Chamando a função sum com os argumentos (6, 9) e {} utils_log.py
+2025-11-15T19:50:48.233970-0300 INFO A função sum retornou 15 utils_log.py
+2025-11-15T19:50:48.233970-0300 INFO Chamando a função sum com os argumentos (8, 3) e {} utils_log.py
+2025-11-15T19:50:48.233970-0300 INFO A função sum retornou 11 utils_log.py

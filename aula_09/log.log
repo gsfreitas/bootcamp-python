@@ -1,0 +1,38 @@
+2025-11-15T17:30:26.150684-0300 INFO Thats OK sum_example.py
+2025-11-15T17:30:26.151688-0300 CRITICAL Thats not OK! sum_example.py
+2025-11-15T17:32:54.070472-0300 INFO The parameters is OK! sum_example.py
+2025-11-15T17:32:54.072177-0300 CRITICAL Fata error! Parameters: a=7, b=8 sum_example.py
+2025-11-15T17:32:54.072177-0300 INFO The parameters is OK! sum_example.py
+2025-11-15T17:32:54.073189-0300 INFO The parameters is OK! sum_example.py
+2025-11-15 17:37:06 | INFO | sum:39 | The parameters is OK!
+2025-11-15 17:37:06 | CRITICAL | sum:42 | Fata error! Parameters: a=7, b=8
+2025-11-15 17:37:06 | INFO | sum:39 | The parameters is OK!
+2025-11-15 17:37:06 | INFO | sum:39 | The parameters is OK!
+2025-11-15 17:38:03 | INFO | sum_example.py:sum:39 | sum_example | PID:15148 | The parameters is OK!
+2025-11-15 17:38:03 | CRITICAL | sum_example.py:sum:42 | sum_example | PID:15148 | Fatal error! Parameters: a=7, b=8
+2025-11-15 17:38:03 | INFO | sum_example.py:sum:39 | sum_example | PID:15148 | The parameters is OK!
+2025-11-15 17:38:03 | INFO | sum_example.py:sum:39 | sum_example | PID:15148 | The parameters is OK!
+2025-11-15 17:40:38 | INFO | __main__ | sum_example.py:sum:20 | sum_example | PID:28964 | TID:10472 | 0:00:00.008564 | The parameters is OK!
+2025-11-15 17:40:38 | CRITICAL | __main__ | sum_example.py:sum:23 | sum_example | PID:28964 | TID:10472 | 0:00:00.009564 | Fatal error! Parameters: a=7, b=8
+2025-11-15 17:40:38 | INFO | __main__ | sum_example.py:sum:20 | sum_example | PID:28964 | TID:10472 | 0:00:00.009564 | The parameters is OK!
+2025-11-15 17:40:38 | INFO | __main__ | sum_example.py:sum:20 | sum_example | PID:28964 | TID:10472 | 0:00:00.010832 | The parameters is OK!
+2025-11-15 17:41:32 | INFO | __main__ | sum_example.py:sum:20 | sum_example | PID:27176 | TID:3068 | 0:00:00.017137 | The parameters is OK!
+2025-11-15 17:41:32 | CRITICAL | __main__ | sum_example.py:sum:23 | sum_example | PID:27176 | TID:3068 | 0:00:00.017137 | Fatal error! Parameters: a=<class 'int'>, b=<class 'str'>
+2025-11-15 17:41:32 | INFO | __main__ | sum_example.py:sum:20 | sum_example | PID:27176 | TID:3068 | 0:00:00.018127 | The parameters is OK!
+2025-11-15 17:41:32 | INFO | __main__ | sum_example.py:sum:20 | sum_example | PID:27176 | TID:3068 | 0:00:00.019649 | The parameters is OK!
+2025-11-15T19:53:25.130456-0300 INFO Chamando a função sum com os argumentos (7, 8) e {} utils_log.py
+2025-11-15T19:53:25.130456-0300 INFO A função sum retornou 15 utils_log.py
+2025-11-15T19:53:25.130456-0300 INFO Chamando a função sum com os argumentos (7, '8') e {} utils_log.py
+2025-11-15T19:53:25.131455-0300 ERROR Erro na função sum: unsupported operand type(s) for +: 'int' and 'str' utils_log.py
+2025-11-15T19:53:25.131455-0300 INFO Chamando a função sum com os argumentos (6, 9) e {} utils_log.py
+2025-11-15T19:53:25.131455-0300 INFO A função sum retornou 15 utils_log.py
+2025-11-15T19:53:25.131455-0300 INFO Chamando a função sum com os argumentos (8, 3) e {} utils_log.py
+2025-11-15T19:53:25.131455-0300 INFO A função sum retornou 11 utils_log.py
+2025-11-15 20:00:47 | INFO | utils_log.py:wrapper:24 | utils_log | PID:3280 | Chamando a função sum com os argumentos (7, 8) e {}
+2025-11-15 20:00:47 | INFO | utils_log.py:wrapper:27 | utils_log | PID:3280 | A função sum retornou 15
+2025-11-15 20:00:47 | INFO | utils_log.py:wrapper:24 | utils_log | PID:3280 | Chamando a função sum com os argumentos (7, '8') e {}
+2025-11-15 20:00:47 | ERROR | utils_log.py:wrapper:30 | utils_log | PID:3280 | Erro na função sum: unsupported operand type(s) for +: 'int' and 'str'
+2025-11-15 20:00:47 | INFO | utils_log.py:wrapper:24 | utils_log | PID:3280 | Chamando a função sum com os argumentos (6, 9) e {}
+2025-11-15 20:00:47 | INFO | utils_log.py:wrapper:27 | utils_log | PID:3280 | A função sum retornou 15
+2025-11-15 20:00:47 | INFO | utils_log.py:wrapper:24 | utils_log | PID:3280 | Chamando a função sum com os argumentos (8, 3) e {}
+2025-11-15 20:00:47 | INFO | utils_log.py:wrapper:27 | utils_log | PID:3280 | A função sum retornou 11
