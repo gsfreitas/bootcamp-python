@@ -3,23 +3,29 @@ import pandas as pd
 class CSVProcessor:
     def __init__(self, file_path: str):
         self.file_path = file_path
-        self.df = None
         self.df = pd.read_csv(self.file_path)
-        self.df_filtered = None
 
-    def filter(self, column, attribute):
-        self.df_filtered = self.df[self.df[column] == attribute]
-        return self.df_filtered
+    def filter(self, columns, attributes, df=None):
+        # A primeira chamada usa o dataframe original
+        if df is None:
+            df = self.df
 
-    def sub_filter(self, column, attribute):
-        return self.df_filtered[self.df[column] == attribute]
+        if len(columns) != len(attributes):
+            raise ValueError("O número de colunas e atributos deve ser igual.")
 
-path = './exemplo.csv'
-filter_column = 'estado'
-limit = 'SP'
+        # Caso base: nenhum filtro → retorne o df atual
+        if len(columns) == 0:
+            return df
 
-csv_file = CSVProcessor(path)
-# csv_file.carregar_csv()
-csv_file.filter(filter_column, limit)
-print(csv_file.filter(filter_column, limit))
-print(csv_file.sub_filter('preco', 110.20))
+        current_column = columns[0]
+        current_attribute = attributes[0]
+
+        # Filtra com base no dataframe recebido
+        df_filtered = df[df[current_column] == current_attribute]
+
+        # Caso base final
+        if len(columns) == 1:
+            return df_filtered
+
+        # Chamada recursiva com o dataframe já filtrado
+        return self.filter(columns[1:], attributes[1:], df_filtered)
