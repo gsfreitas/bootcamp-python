@@ -16,6 +16,12 @@ SQLModel.metadata.create_all(engine)
 # hero_2 = Hero(name="Rusty-Man", secret_name="Tommy Sharp", age=48)
 # hero_3 = Hero(name="Spider-Girl", secret_name="Miral Lagoon", age=16)
 
+#  with Session(engine) as session:
+#     session.add(Hero(name="Deadpond", secret_name="Dive Wilson", age=45))
+#     session.add(Hero(name="Rusty-Man", secret_name="Tommy Sharp", age=48))
+#     session.add(Hero(name="Spider-Girl", secret_name="Miral Lagoon", age=16))
+#     session.commit()
+
 with Session(engine) as session:
     # select * from hero
     statement = text("SELECT * FROM hero")
